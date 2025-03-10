@@ -1,1 +1,1 @@
-https://github.com/EvgenyKoshelenko/posmotri-v-okno.git
+https://github.com/EvgenyKoshelenko/posmotri-v-okno-fd.git
