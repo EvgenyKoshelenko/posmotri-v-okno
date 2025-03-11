@@ -64,6 +64,7 @@ ol {
 }
 
 .search-form {
+  inset-block: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,6 +94,7 @@ ol {
 
 .result__video-containe {
   overflow: hidden;
+  margin-block-end: 16px;
 }
 
 .result__video {
@@ -119,6 +121,7 @@ ol {
   justify-content: space-between;
   display: flex;
 }
+
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
@@ -133,8 +136,6 @@ ol {
   flex-grow: 1;
   width: 180px;
 }
-
-
 
 .search-form__fieldset-title {
   font-weight: 400;
@@ -220,7 +221,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   border-right: 1px solid transparent;
-  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
   background-color: transparent;
   font-weight: 400;
   font-size: 18px;
@@ -262,6 +263,15 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
+}
+
+.search-form__textfield:active {
+  border-right: #fff;
+  border-left: #fff;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__label:has(:not(:active):focus-visible) {
